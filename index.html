@@ -8,32 +8,35 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/header.css">
     
 </head>
 <body class="main-bg">
-    <div>
-        <div>
-            <ul>
-                <li>
-                    <a href="https://keepcoding.io">Recurso externo</a>
-                    <a href="assets/app/codeflix.png">Recurso del proyecto</a>
-                    <a href="#footer">Navegación en la página</a>
+    <header class="header">
+        <div class="header__image">
+            <img src="assets/app/codeflix.png" alt="Logo Codeflix">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li class="header__nav__list__item">
+                    <a class="btn" href="#shows">All shows</a>
                 </li>
-                <li>
-                    <a href="">Sing in</a>
+                <li class="header__nav__list__item">
+                    <a class="btn" href="sign-in.html">Sign in</a>
                 </li>
             </ul>
-        </div>
-    </div>
-    <h1>codeflix</h1>
-    <div class="banner">
-        <div class="banner__image"></div>
-        <div class="banner__content">
-            <h1>Unlimited movies, TV shows, and more</h1>
-            <h2>Watch anywhere. Cancel anytime</h2>
-            <p>Ready to watch?</p>
-        </div>
-    </div>
+        </nav> 
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner__image"></div>
+            <div class="banner__content">
+                <h1>Unlimited movies, TV shows, and more</h1>
+                <h2>Watch anywhere. Cancel anytime</h2>
+                <p>Ready to watch?</p>
+            </div>
+        </section>
+    </main>
     <footer id="footer" class="footer">
         <!-- 
             inline-block
