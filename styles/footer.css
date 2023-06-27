@@ -15,10 +15,15 @@
     /* border-radius: 5px; */
     /* margin = padding */
     /* margin-bottom: 80px; */
+    font-size: 12px;
 }
-
+/* 1rem = 16px */
 .footer p {
+    font-size: 1rem;
     margin: 0;
+    font-weight: 400;
+    text-transform: capitalize;
+    /* line-height: 1.4; */
 }
 
 .footer .footer__company {
