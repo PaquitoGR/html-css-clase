@@ -1,3 +1,23 @@
-.header__image {
+.header {
+    position: sticky;
+    background-color: var(--main-bg-color);
+    z-index: 99;
+    top: 0;
+    left: 0;
+  }
+
+  .header__image{
+    width: 120%;
+  }
+
+  .header__image img {
     width: 100%;
-}
+  }
+
+  .header .header__nav .header__nav__list {
+    list-style: none;
+  }
+
+  .header__nav .header__nav__list .header__nav__list__item a {
+    text-decoration: none;
+  }
