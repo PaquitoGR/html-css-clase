@@ -27,3 +27,27 @@
     z-index: 0;
     opacity: 0.3;
 }
+
+@media (800px <= width) and (orientation = landscape){
+    .banner {
+        height: 55vh;
+    }
+}
+
+/*
+p:hover {
+    color: yellowgreen;
+}
+
+@media (width <= 700px) {
+    p:hover {
+        color: inherit;
+    }
+}
+
+@media (hover: hover) {
+    p:hover {
+        color: yellowgreen;
+    }
+}
+*/
