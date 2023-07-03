@@ -1,13 +1,15 @@
 .banner {
     height: 75vh;
-    background-color: #1a1515;
     text-align: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner .banner__content {
     z-index: 1;
-    position: relative;    
+    position: relative;
 }
 
 .banner .banner__image {
