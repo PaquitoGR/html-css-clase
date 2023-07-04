@@ -5,14 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Grid</title>
     <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /*grid-template-columns: 20% 60% 20%;
+            grid-template-columns: 1fr 2fr 1fr;*/
+            grid-template-rows: 80px 35vh 40vh 80px;
+            gap: 15px;
+            grid-template-areas: 
+            "navbar navbar navbar"
+            "header header header"
+            "aside main ."
+            "footer footer footer"
+        }
+        nav {
+            background-color: orange;
+            grid-area: navbar;
+            /*grid-column: 1 / 4;
+            grid-row: 1 / 2;*/
+            /* grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2; */
+        }
+        section {
+            background-color: blue;
+            grid-area: header;
+            /*grid-column: 1 / 4;
+            grid-row: 2 / 3; */
+        }
+        aside {
+            background-color: blueviolet;
+            grid-area: aside;
+            /*grid-column: 1 / 2;
+            grid-row: 3 / 4; */
+        }
+        main {
+            background-color: yellow;
+            grid-area: main;
+            /*grid-column: 2 / 3;
+            grid-row: 3 / 4; */
+        }
+        footer {
+            background-color: green;
+            grid-area: footer;
+            /*grid-column: 1 / 4;
+            grid-row: 4 / 5; */
+        }
 
     </style>
 </head>
 <body>
-    <nav></nav>
-    <section></section>
-    <aside></aside>
-    <main></main>
-    <footer></footer>
+    <nav>navbar</nav>
+    <section>section</section>
+    <aside>aside</aside>
+    <main>main</main>
+    <footer>footer</footer>
 </body>
 </html>
