@@ -6,7 +6,7 @@
 .shows__list {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     padding: 0;
     gap: 15px
 }
@@ -17,4 +17,10 @@
 
 .shows .shows__list figure {
     margin: 0;
+}
+
+@media (min-width: 768px) {
+    .shows__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
