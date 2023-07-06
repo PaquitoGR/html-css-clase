@@ -73,3 +73,23 @@ input::placeholder, textarea::placeholder {
     }
 }
 
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+.spinner {
+    margin: 20px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(216, 216, 216);
+    border-left-color: red;
+    border-radius: 50%;
+    animation: spin 1s ease-in;
+    animation-iteration-count: infinite;
+}

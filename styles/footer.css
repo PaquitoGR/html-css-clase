@@ -1,8 +1,7 @@
 .footer {
     text-align: center;
     font-style: italic;
-    background-color: var(--main-bg-color);   
-    background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #fcfcfc 0%, #09b9e5 17.27%, #691ca0 79.44%, #000413 100% );
+    background-color: var(--main-bg-color);
     text-shadow: 2px 2px 5px rgb(52, 3, 80);
     padding-top: 10px;
     /* T - R - B - L */   
@@ -16,7 +15,10 @@
     /* margin = padding */
     /* margin-bottom: 80px; */
     font-size: 12px;
+    /* background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #fcfcfc 0%, #8d09e5 17.27%, #a01c1c 79.44%, #000413 100% ); */
+    background: radial-gradient(circle, rgba(229,9,20,1) 0%, #0e1b4f 70%, #000413 100%);
 }
+
 .footer p {
     /* 1rem = 16px */
     font-size: 1rem;
@@ -30,3 +32,8 @@
     font-style: normal;
 }
 
+@media (48em <= width) {
+    .footer {
+        background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
+    }
+}
