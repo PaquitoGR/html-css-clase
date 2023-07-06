@@ -51,3 +51,24 @@ p:hover {
     }
 }
 */
+
+@keyframes fade-in {
+    /* Inicio */
+    0% {
+        opacity: 0;
+    }
+
+    /* fin*/
+    100% {
+        opacity: 1;        
+    }
+
+}
+
+.banner__content {
+    animation-name: fade-in;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    /* lo mismo en una linea: */
+    /* animation: fade-in 5s linear; */
+}
