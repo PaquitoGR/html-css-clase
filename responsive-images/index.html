@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive images example</title>
+    <style>
+        body { background-color: black }
+        img.docu {
+            width: 100%;
+            background-color: blueviolet;
+            aspect-ratio: 4 / 2;
+            object-fit: cover;
+            object-position: top center;
+        }
+    </style>
+ç</head>
+<body>    
+    <img class="docu" src="../assets/docus/docu_1.webp">
+    <!-- Picture/source -->
+    <picture>
+        <source srcset="https://storage.googleapis.com/web-dev-uploads/image/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/ZJ6ytgzvsh5CvWhdthsA.jpg" media="(min-width: 1200px)">
+        <source srcset="https://storage.googleapis.com/web-dev-uploads/image/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/qQ0QuF4k0kO8B72b8Vo8.jpg" media="(min-width: 768px)">
+        <img src="https://storage.googleapis.com/web-dev-uploads/image/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/fO7EJEn4hGVeN4UbBO3g.jpg">
+    </picture>
+    <!-- srcset -->
+    <img 
+        src="dog_c_scalew_1352.jpg"
+        alt=""
+        srcset="
+        dog_c_scale,w_591.jpg 591w,
+        dog_c_scalew_1352.jpg 1352w
+        "
+    >
+</body>
+</html>
